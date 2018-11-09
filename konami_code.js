@@ -14,12 +14,12 @@ const codes = [
 const index = 0;
 
 function init() {
-  for (let i = 0; i < codes.length - 1; i++) {
+  for (let i = 0; i < codes.length; i++) {
     document.body.addEventListener('keydown', function(event) {
       const key = event.key;
 
-      if (key === codes[index]) {
-        index++;
+      if (key === codes[i]) {
+        i++;
 
         if (index === codes.length) {
           alert('Hurray!');
